@@ -4,7 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- 버튼 영역 -->
+      <div class="section__service">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- 계산 결과 영역 -->
+      <div class="section__result">0</div>
+      <!-- 번호, 계산 버튼 영역 -->
+      <div class="section__buttons">
+        <div>
+          <div class="button darkgray">AC</div>
+          <div class="button darkgray">⁺/-</div>
+          <div class="button darkgray">%</div>
+          <div class="button yellow">÷</div>
+        </div>
+        <div>
+          <div class="button lightgray number">7</div>
+          <div class="button lightgray number">8</div>
+          <div class="button lightgray number">9</div>
+          <div class="button yellow">×</div>
+        </div>
+        <div>
+          <div class="button lightgray number">4</div>
+          <div class="button lightgray number">5</div>
+          <div class="button lightgray number">6</div>
+          <div class="button yellow">-</div>
+        </div>
+        <div>
+          <div class="button lightgray number">1</div>
+          <div class="button lightgray number">2</div>
+          <div class="button lightgray number">3</div>
+          <div class="button yellow">+</div>
+        </div>
+        <div id="section__button--last">
+          <div class="button lightgray number">0</div>
+          <div class="button lightgray">.</div>
+          <div class="button yellow">=</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
