@@ -1,0 +1,105 @@
+:root {
+  /* color */
+  --bg-color-darkgray: #434345;
+  --bg-color-middlegray: #555556;
+  --bg-color-lightgray: #717172;
+  --bg-color-gray: gray;
+  --bg-color-red: #ec6a5f;
+  --bg-color-yellow: #f1a33c;
+  --bg-color-lightyellow: #f4bf50;
+  --bg-color-green: #61c554;
+  --bg-color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 230px;
+  background-color: var(--bg-color-darkgray);
+  border: 0.5px solid var(--bg-color-gray);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* section__service */
+.section__service {
+  display: flex;
+  height: 25px;
+  background-color: var(--bg-color-darkgray);
+  padding: 0.7rem;
+}
+
+.section__service > span {
+  display: flex;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  margin-right: 0.7rem;
+  color: var(--bg-color-white);
+  border-radius: 50%;
+}
+
+.section__service > :nth-child(1) {
+  background-color: var(--bg-color-red);
+}
+
+.section__service > :nth-child(2) {
+  background-color: var(--bg-color-lightyellow);
+}
+
+.section__service > :nth-child(3) {
+  background-color: var(--bg-color-green);
+}
+
+/* section__result */
+.section__result {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: #434345;
+  height: 60px;
+  margin-right: 0.5rem;
+  font-size: 5rem;
+  font-weight: 200;
+  color: var(--bg-color-white);
+}
+
+/* section__buttons */
+.section__buttons > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section__buttons .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  font-size: 2.2rem;
+  color: var(--bg-color-white);
+  border: 0.5px solid var(--bg-color-darkgray);
+}
+
+#section__button--last {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.darkgray {
+  background-color: var(--bg-color-middlegray);
+}
+
+.lightgray {
+  background-color: var(--bg-color-lightgray);
+}
+
+.yellow {
+  background-color: var(--bg-color-yellow);
+}
